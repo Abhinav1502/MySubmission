@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Line Drawer</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Interactive Line Drawer by Abhinav Eeranti</h1>
+  <div id="controls">
+
+    <label for="lineWidth">Line width </label>
+    <!-- Line Width Input  -->
+    <input type="number" id="lineWidth" value="2" aria-label="Set line width">
+    <button id="addSegment" aria-label="Generate new line segment">Generate new segment</button>
+
+    <!-- Coordinate Input -->
+    <input type="text" id="coordinateInput" placeholder="Enter x,y (e.g., 100, 150)" aria-label="Enter coordinates as x,y">
+    <button id="addCoordinate" aria-label="Add coordinate to the line">Add Coordinate</button>
+
+    <!-- Canvas Size Input -->
+    <label for="canvasWidth">Canvas Width</label>
+    <input type="number" id="canvasWidth" value="800" min="400" aria-label="Set canvas width">
+    <label for="canvasHeight">Canvas Height</label>
+    <input type="number" id="canvasHeight" value="400" min="400" aria-label="Set canvas height">
+    <button id="resizeCanvas" aria-label="Resize canvas">Resize Canvas</button>
+  </div>
+  <canvas id="canvas" width="800" height="400"></canvas>
+  <script src="/canvasLogic.js"></script>
+</body>
+</html>
